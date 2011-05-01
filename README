@@ -1,0 +1,23 @@
+This plugin run the PHP pathinfo() function on a given path parameter.
+See http://php.net/manual/en/function.pathinfo.php for more info.
+
+Pay attention that no verification of any sort is done on the path parameter.
+Please be very prudent when using this plugin.
+
+(c) Copyright 2011 Pv Ledoux
+Author: ee-addons@pvledoux.be
+Twitter: @pvledoux
+
+------------------------------------------------------
+Examples:
+
+{exp:pvl_pathinfo path="/a/path/to/a/file.txt"}
+
+	{dirname}<br />
+	{basename}<br />
+	{filename}<br />
+	{extension}
+
+{/exp:pvl_pathinfo}
+
+------------------------------------------------------
